@@ -23,6 +23,9 @@
 		6293B6FD261B187500CFAD03 /* CommonFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6293B6FC261B187500CFAD03 /* CommonFunctions.swift */; };
 		6293B717261B24BA00CFAD03 /* FirebaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6293B716261B24BA00CFAD03 /* FirebaseModel.swift */; };
 		6293B71C261B3F3E00CFAD03 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6293B71B261B3F3E00CFAD03 /* HomeViewController.swift */; };
+		6293B721261B4DB000CFAD03 /* ButtonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6293B720261B4DAF00CFAD03 /* ButtonsViewController.swift */; };
+		6293B726261B4E9900CFAD03 /* SpeakViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6293B725261B4E9900CFAD03 /* SpeakViewController.swift */; };
+		6293B72B261B56A000CFAD03 /* ButtonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6293B72A261B56A000CFAD03 /* ButtonCollectionViewCell.swift */; };
 		65C530B5B709B61B42B9DF17 /* Pods_ChildLearning.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91E0A64EB8F8A9891BF5BDA9 /* Pods_ChildLearning.framework */; };
 		66A7BB9BCD58992CE8B366AE /* Pods_ChildLearningTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B62FC7FB648EFA59885CECBC /* Pods_ChildLearningTests.framework */; };
 		B3A854E03E0FD99CF7986842 /* Pods_ChildLearning_ChildLearningUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B3C08B0734637A692539699 /* Pods_ChildLearning_ChildLearningUITests.framework */; };
@@ -73,6 +76,9 @@
 		6293B6FC261B187500CFAD03 /* CommonFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonFunctions.swift; sourceTree = "<group>"; };
 		6293B716261B24BA00CFAD03 /* FirebaseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseModel.swift; sourceTree = "<group>"; };
 		6293B71B261B3F3E00CFAD03 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		6293B720261B4DAF00CFAD03 /* ButtonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsViewController.swift; sourceTree = "<group>"; };
+		6293B725261B4E9900CFAD03 /* SpeakViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakViewController.swift; sourceTree = "<group>"; };
+		6293B72A261B56A000CFAD03 /* ButtonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonCollectionViewCell.swift; sourceTree = "<group>"; };
 		86065D23D92553DC6CD8FF08 /* Pods-ChildLearning-ChildLearningUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChildLearning-ChildLearningUITests.debug.xcconfig"; path = "Target Support Files/Pods-ChildLearning-ChildLearningUITests/Pods-ChildLearning-ChildLearningUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		91E0A64EB8F8A9891BF5BDA9 /* Pods_ChildLearning.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChildLearning.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B62FC7FB648EFA59885CECBC /* Pods_ChildLearningTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChildLearningTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -170,6 +176,9 @@
 				6293B6FC261B187500CFAD03 /* CommonFunctions.swift */,
 				6293B716261B24BA00CFAD03 /* FirebaseModel.swift */,
 				6293B71B261B3F3E00CFAD03 /* HomeViewController.swift */,
+				6293B720261B4DAF00CFAD03 /* ButtonsViewController.swift */,
+				6293B725261B4E9900CFAD03 /* SpeakViewController.swift */,
+				6293B72A261B56A000CFAD03 /* ButtonCollectionViewCell.swift */,
 			);
 			path = ChildLearning;
 			sourceTree = "<group>";
@@ -434,6 +443,7 @@
 				6293B717261B24BA00CFAD03 /* FirebaseModel.swift in Sources */,
 				62337D8426176B0400AF8C1D /* LoginViewController.swift in Sources */,
 				62337D5526174FD900AF8C1D /* ViewController.swift in Sources */,
+				6293B721261B4DB000CFAD03 /* ButtonsViewController.swift in Sources */,
 				6293B6FD261B187500CFAD03 /* CommonFunctions.swift in Sources */,
 				62337D5126174FD900AF8C1D /* AppDelegate.swift in Sources */,
 				6293B71C261B3F3E00CFAD03 /* HomeViewController.swift in Sources */,
@@ -441,6 +451,8 @@
 				62337D8926176B1900AF8C1D /* SignUpViewController.swift in Sources */,
 				6293B6E0261B150200CFAD03 /* Constant.swift in Sources */,
 				6293B6F8261B17C800CFAD03 /* Alert.swift in Sources */,
+				6293B726261B4E9900CFAD03 /* SpeakViewController.swift in Sources */,
+				6293B72B261B56A000CFAD03 /* ButtonCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
