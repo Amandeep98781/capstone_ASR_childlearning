@@ -9,6 +9,7 @@ import UIKit
 import FirebaseAuth
 import FirebaseDatabase
 import Firebase
+import FirebaseFirestore
 
 
 class LoginViewController: UIViewController {
@@ -44,30 +45,19 @@ class LoginViewController: UIViewController {
     }
     
     func fetchAlphabets(){
-        Firestore.f
-        
-        ref.child(Constant.FirebaseData.Alphabets).observe(.value, with: { snapshot in
-            
-            print(" ----- snapshot ------\(snapshot)")
-            for eachPlace in (snapshot.children){
-                print("users p------- \(eachPlace)")
-                let place = Alphabets(snapshot: eachPlace as! DataSnapshot)
-                print("place ---- \(place)")
-            }
-           
-        })
-        ref.child(Constant.FirebaseData.Alphabets).getData { (error, snapshot) in
-            print("error ------\(error)")
-            print("snapshot ------\(snapshot)")
-            for each in snapshot.children{
-                print(each)
-            }
-            for eachPlace in (snapshot.children){
-                print("users p------- \(eachPlace)")
-                let place = Alphabets(snapshot: eachPlace as! DataSnapshot)
-                print("place ---- \(place)")
-            }
+        let db = Firestore.firestore()
+        db.collection(Constant.FirebaseData.Alphabets).getDocuments { (query, error) in
+            print(query)
+            print(error)
+            if let err = error {
+                   print("Error getting documents: \(err)")
+               } else {
+                   for document in query!.documents {
+                       print("\(document.documentID) => \(document.data())")
+                   }
+               }
         }
+       
     }
     
     
