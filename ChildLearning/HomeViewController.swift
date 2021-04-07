@@ -22,5 +22,23 @@ class HomeViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func wordClicked(_ sender: Any) {
+        let vc = self.storyboard?.instantiateViewController(identifier: "ButtonsViewController") as! ButtonsViewController
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @IBAction func alphabetClicked(_ sender: Any) {
+        let vc = self.storyboard?.instantiateViewController(identifier: "ButtonsViewController") as! ButtonsViewController
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @IBAction func numberClicked(_ sender: Any) {
+        let vc = self.storyboard?.instantiateViewController(identifier: "ButtonsViewController") as! ButtonsViewController
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    @IBAction func logoutClicked(_ sender: Any) {
+        let vc = self.storyboard?.instantiateViewController(identifier: "ButtonsViewController") as! ButtonsViewController
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }

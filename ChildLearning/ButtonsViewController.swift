@@ -22,3 +22,23 @@ class ButtonsViewController: UIViewController {
     }
     
 }
+
+extension ButtonsViewController: UICollectionViewDelegate, UICollectionViewDataSource{
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 5
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ButtonCollectionViewCell", for: indexPath) as! ButtonCollectionViewCell
+        cell.layer.cornerRadius = 5.0
+        return cell
+    }
+}
+
+
+extension ButtonsViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+            return CGSize(width: self.view.frame.width/2 - 20, height: self.view.frame.width/2 - 20)
+       
+    }
+}

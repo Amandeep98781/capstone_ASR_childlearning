@@ -54,14 +54,6 @@ class SignUpViewController: UIViewController {
         })
     }
     
-    func signup(email: String,name: String, password: String){
-            Auth.auth().createUser(withEmail: email, password: password) { authResult, error in
-              // ...
-                print(authResult)
-                print(error)
-            }
-       
-    }
     
     @IBAction func signUpcClicked(_ sender: Any) {
         if txtFName.text?.count == 0{

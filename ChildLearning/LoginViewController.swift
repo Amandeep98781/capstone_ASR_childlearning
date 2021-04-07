@@ -57,9 +57,7 @@ class LoginViewController: UIViewController {
     func fetchLogin(email: String, password: String){
 
         if let singleUser = users.enumerated().first(where: {$0.element.email == email}) {
-           // do something with foo.offset and foo.element
-            print("index ----- \(singleUser.offset)")
-            print("element ----- \(singleUser.element)")
+
             let user = singleUser.element
             if user.password == password{
                 Alert.addAlertController(strTittle: "Error!", strMessage: "Incorrect Password", viewC: self)
