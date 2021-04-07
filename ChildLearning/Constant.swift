@@ -13,6 +13,6 @@ class Constant: NSObject {
         static let Comments = "Comments"
          static let LiveCount = "LiveCount"
          static let User = "User"
-        static let Time = "Time"
+        static let Alphabets = "Alphabets"
     }
 }

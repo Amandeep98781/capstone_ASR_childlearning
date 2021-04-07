@@ -8,6 +8,8 @@
 import UIKit
 import FirebaseAuth
 import FirebaseDatabase
+import Firebase
+
 
 class LoginViewController: UIViewController {
 
@@ -22,6 +24,7 @@ class LoginViewController: UIViewController {
         self.navigationController?.navigationBar.isTranslucent = true
         self.ref = Database.database().reference()
         fetchAllUsers()
+        fetchAlphabets()
         // Do any additional setup after loading the view.
     }
     
@@ -30,6 +33,7 @@ class LoginViewController: UIViewController {
          Get the all data from Firebase
          */
         ref.child(Constant.FirebaseData.User).observe(.value, with: { snapshot in
+            
             for eachPlace in (snapshot.children){
                 let place = Users(snapshot: eachPlace as! DataSnapshot)
                 self.users.append(place)
@@ -38,6 +42,35 @@ class LoginViewController: UIViewController {
            
         })
     }
+    
+    func fetchAlphabets(){
+        Firestore.f
+        
+        ref.child(Constant.FirebaseData.Alphabets).observe(.value, with: { snapshot in
+            
+            print(" ----- snapshot ------\(snapshot)")
+            for eachPlace in (snapshot.children){
+                print("users p------- \(eachPlace)")
+                let place = Alphabets(snapshot: eachPlace as! DataSnapshot)
+                print("place ---- \(place)")
+            }
+           
+        })
+        ref.child(Constant.FirebaseData.Alphabets).getData { (error, snapshot) in
+            print("error ------\(error)")
+            print("snapshot ------\(snapshot)")
+            for each in snapshot.children{
+                print(each)
+            }
+            for eachPlace in (snapshot.children){
+                print("users p------- \(eachPlace)")
+                let place = Alphabets(snapshot: eachPlace as! DataSnapshot)
+                print("place ---- \(place)")
+            }
+        }
+    }
+    
+    
     
     @IBAction func loginClicked(_ sender: Any) {
         if txtFEmail.text == ""{

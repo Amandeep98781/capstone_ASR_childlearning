@@ -13,8 +13,6 @@ class ButtonsViewController: UIViewController {
     @IBOutlet weak var lblTitle: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
     
     @IBAction func backClicked(_ sender: Any) {

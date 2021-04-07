@@ -10,6 +10,8 @@ pod 'Firebase/Analytics'
 pod 'Firebase/Database'
 pod 'IQKeyboardManagerSwift'
 pod 'Firebase/Auth'
+pod 'Firebase/Firestore'
+#pod 'FirebaseFirestoreSwift'
 
   target 'ChildLearningTests' do
     inherit! :search_paths
