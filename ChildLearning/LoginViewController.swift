@@ -56,11 +56,23 @@ class LoginViewController: UIViewController {
     
     func fetchLogin(email: String, password: String){
 
-        if let foo = users.enumerated().first(where: {$0.element.email == email}) {
+        if let singleUser = users.enumerated().first(where: {$0.element.email == email}) {
            // do something with foo.offset and foo.element
-            print("index ----- \(foo.offset)")
-            print("element ----- \(foo.element)")
+            print("index ----- \(singleUser.offset)")
+            print("element ----- \(singleUser.element)")
+            let user = singleUser.element
+            if user.password == password{
+                Alert.addAlertController(strTittle: "Error!", strMessage: "Incorrect Password", viewC: self)
+            }
+            else{
+                let vc = self.storyboard?.instantiateViewController(identifier: "HomeViewController") as! HomeViewController
+                self.navigationController?.pushViewController(vc, animated: true)
+            }
             
+            
+        }
+        else{
+            Alert.addAlertController(strTittle: "Error!", strMessage: "Incorrect Email", viewC: self)
         }
         
         if let user = users.firstIndex(where: {$0.email == email}) {

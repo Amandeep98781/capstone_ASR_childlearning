@@ -389,23 +389,23 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pef-Cs-H21">
                                 <rect key="frame" x="30" y="431.5" width="354" height="40"/>
-                                <color key="backgroundColor" name="AccentColor"/>
+                                <color key="backgroundColor" red="0.94665025684931503" green="0.30982448630136988" blue="0.61967572773972601" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Ai0-DB-05p"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
-                                <state key="normal" title="Images">
+                                <state key="normal" title="Numbers">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nMU-sY-XSx">
                                 <rect key="frame" x="30" y="271.5" width="354" height="40"/>
-                                <color key="backgroundColor" name="AccentColor"/>
+                                <color key="backgroundColor" red="0.51629387842465757" green="0.37936108732876711" blue="0.99999129772186279" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="WiX-aO-Uea"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
-                                <state key="normal" title="Alphabets">
+                                <state key="normal" title="Words">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
@@ -417,12 +417,12 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RIZ-hi-vbC">
                                 <rect key="frame" x="30" y="351.5" width="354" height="40"/>
-                                <color key="backgroundColor" name="AccentColor"/>
+                                <color key="backgroundColor" red="0.32555650684931509" green="0.84736194349315064" blue="0.9060894691780822" alpha="0.84705882352941175" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Gmu-3t-dzO"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
-                                <state key="normal" title="Numberic">
+                                <state key="normal" title="Aplhabets">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                             </button>
