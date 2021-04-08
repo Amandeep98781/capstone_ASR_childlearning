@@ -12,6 +12,7 @@ class ButtonsViewController: UIViewController {
     @IBOutlet weak var collectionVWords: UICollectionView!
     @IBOutlet weak var lblTitle: UILabel!
     
+    var arr = [String]()
     override func viewDidLoad() {
         super.viewDidLoad()
         fetchAlphabets()
@@ -34,6 +35,14 @@ class ButtonsViewController: UIViewController {
                } else {
                    for document in query!.documents {
                        print("\(document.documentID) => \(document.data())")
+                    if let doc = document.data() as? [String: Any]{
+                        if let value =  doc["name"] as? String{
+                            print("value ------ \(value)")
+                            self.arr.append(value)
+                            self.collectionVWords.reloadData()
+                        }
+                       
+                    }
                    }
                }
         }
@@ -44,11 +53,12 @@ class ButtonsViewController: UIViewController {
 extension ButtonsViewController: UICollectionViewDelegate, UICollectionViewDataSource{
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 5
+        return arr.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ButtonCollectionViewCell", for: indexPath) as! ButtonCollectionViewCell
+        cell.lblName.text = arr[indexPath.row]
         cell.layer.cornerRadius = 5.0
         return cell
     }
