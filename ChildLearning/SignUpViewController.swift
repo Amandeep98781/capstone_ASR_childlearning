@@ -28,13 +28,15 @@ class SignUpViewController: UIViewController {
 
         let data = ["name": name,
                     "email": email,
-                    "passowrd" : password] as [String : Any]
+                    "password" : password] as [String : Any]
         
         if users.contains(where: {$0.email == email }){
             Alert.addAlertController(strTittle: "", strMessage: "Email alreday registered", viewC: self)
         }
         else{
             ref.child(Constant.FirebaseData.User).childByAutoId().setValue(data)
+            let vc = self.storyboard?.instantiateViewController(identifier: "HomeViewController") as! HomeViewController
+            self.navigationController?.pushViewController(vc, animated: true)
         }
     }
     

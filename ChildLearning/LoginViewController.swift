@@ -91,7 +91,7 @@ class LoginViewController: UIViewController {
             
         }
         else{
-            Alert.addAlertController(strTittle: "Error!", strMessage: "Incorrect Email", viewC: self)
+            Alert.addAlertController(strTittle: "Error!", strMessage: "Email not registered", viewC: self)
         }
         
         if let user = users.firstIndex(where: {$0.email == email}) {
