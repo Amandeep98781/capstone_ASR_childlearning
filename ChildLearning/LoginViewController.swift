@@ -2,7 +2,6 @@
 //  LoginViewController.swift
 //  ChildLearning
 //
-//  Created by Rakinder on 02/04/21.
 //
 
 import UIKit
@@ -47,8 +46,6 @@ class LoginViewController: UIViewController {
     func fetchAlphabets(){
         let db = Firestore.firestore()
         db.collection(Constant.FirebaseData.Alphabets).getDocuments { (query, error) in
-            print(query)
-            print(error)
             if let err = error {
                    print("Error getting documents: \(err)")
                } else {

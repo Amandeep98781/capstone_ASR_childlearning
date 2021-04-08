@@ -2,7 +2,6 @@
 //  ChildLearningUITests.swift
 //  ChildLearningUITests
 //
-//  Created by Rakinder on 02/04/21.
 //
 
 import XCTest
