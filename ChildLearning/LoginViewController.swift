@@ -9,6 +9,7 @@ import FirebaseAuth
 import FirebaseDatabase
 import Firebase
 import FirebaseFirestore
+import FBSDKLoginKit
 
 
 class LoginViewController: UIViewController {
@@ -42,9 +43,33 @@ class LoginViewController: UIViewController {
         })
     }
     
-  
+    func loginWithFb(){
+        let loginManager = LoginManager()
+        loginManager.logIn(permissions: ["email"], from: self) { (result, error) in
+            if result?.grantedPermissions.contains("email") ?? false{
+                self.getFBUserData()
+                loginManager.logOut()
+            }
+            else if result?.isCancelled ?? false{
+                print("User cancelled login.")
+            }
+        }
+    }
+    
+    func getFBUserData(){
+        if((AccessToken.current) != nil){
+            GraphRequest(graphPath: "me", parameters: ["fields": "id, name, picture.type(large), email"]).start(completionHandler: { (connection, result, error) -> Void in
+                if (error == nil){
+                    if  let dict = result as? [String : Any]{
+                       print(dict)
+                    }
+                }
+            })
+        }
+    }
     
     @IBAction func facebookLoginClicked(_ sender: Any) {
+        loginWithFb()
     }
     
     @IBAction func loginClicked(_ sender: Any) {
@@ -74,8 +99,6 @@ class LoginViewController: UIViewController {
                 let vc = self.storyboard?.instantiateViewController(identifier: "HomeViewController") as! HomeViewController
                 self.navigationController?.pushViewController(vc, animated: true)
             }
-            
-            
         }
         else{
             Alert.addAlertController(strTittle: "Error!", strMessage: "Email not registered", viewC: self)

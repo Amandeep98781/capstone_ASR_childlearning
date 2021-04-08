@@ -39,6 +39,7 @@ class ButtonsViewController: UIViewController {
                         if let value =  doc["name"] as? String{
                             print("value ------ \(value)")
                             self.arr.append(value)
+                            self.arr = self.arr.sorted { $0.localizedCaseInsensitiveCompare($1) == ComparisonResult.orderedAscending }
                             self.collectionVWords.reloadData()
                         }
                        

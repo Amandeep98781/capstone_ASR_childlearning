@@ -441,7 +441,7 @@
                                     <constraint firstAttribute="height" constant="50" id="95R-M4-6R7"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="17"/>
-                                <state key="normal" title="Words">
+                                <state key="normal" title="Miscellaneous">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
