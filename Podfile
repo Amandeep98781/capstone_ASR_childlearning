@@ -11,6 +11,7 @@ pod 'Firebase/Database'
 pod 'IQKeyboardManagerSwift'
 pod 'Firebase/Auth'
 pod 'Firebase/Firestore'
+pod 'FacebookLogin'
 #pod 'FirebaseFirestoreSwift'
 
   target 'ChildLearningTests' do
