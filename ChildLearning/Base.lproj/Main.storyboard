@@ -171,6 +171,9 @@
                                 <state key="normal" title="Login With Facebook">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
+                                <connections>
+                                    <action selector="facebookLoginClicked:" destination="mIs-Vt-Qr1" eventType="touchUpInside" id="Dfq-Rl-WA7"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="QEE-wx-9bI"/>

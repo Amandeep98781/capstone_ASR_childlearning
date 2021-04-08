@@ -57,7 +57,8 @@ class LoginViewController: UIViewController {
        
     }
     
-    
+    @IBAction func facebookLoginClicked(_ sender: Any) {
+    }
     
     @IBAction func loginClicked(_ sender: Any) {
         if txtFEmail.text == ""{
