@@ -17,7 +17,6 @@
 		62337D7326174FDD00AF8C1D /* ChildLearningUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62337D7226174FDD00AF8C1D /* ChildLearningUITests.swift */; };
 		62337D8426176B0400AF8C1D /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62337D8326176B0400AF8C1D /* LoginViewController.swift */; };
 		62337D8926176B1900AF8C1D /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62337D8826176B1900AF8C1D /* SignUpViewController.swift */; };
-		6293B6AC2619F98500CFAD03 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6293B6AB2619F98500CFAD03 /* GoogleService-Info.plist */; };
 		6293B6E0261B150200CFAD03 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6293B6DF261B150200CFAD03 /* Constant.swift */; };
 		6293B6F8261B17C800CFAD03 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6293B6F7261B17C800CFAD03 /* Alert.swift */; };
 		6293B6FD261B187500CFAD03 /* CommonFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6293B6FC261B187500CFAD03 /* CommonFunctions.swift */; };
@@ -26,6 +25,7 @@
 		6293B721261B4DB000CFAD03 /* ButtonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6293B720261B4DAF00CFAD03 /* ButtonsViewController.swift */; };
 		6293B726261B4E9900CFAD03 /* SpeakViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6293B725261B4E9900CFAD03 /* SpeakViewController.swift */; };
 		6293B72B261B56A000CFAD03 /* ButtonCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6293B72A261B56A000CFAD03 /* ButtonCollectionViewCell.swift */; };
+		6293B779261F2E3400CFAD03 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6293B778261F2E3400CFAD03 /* GoogleService-Info.plist */; };
 		65C530B5B709B61B42B9DF17 /* Pods_ChildLearning.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91E0A64EB8F8A9891BF5BDA9 /* Pods_ChildLearning.framework */; };
 		66A7BB9BCD58992CE8B366AE /* Pods_ChildLearningTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B62FC7FB648EFA59885CECBC /* Pods_ChildLearningTests.framework */; };
 		B3A854E03E0FD99CF7986842 /* Pods_ChildLearning_ChildLearningUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B3C08B0734637A692539699 /* Pods_ChildLearning_ChildLearningUITests.framework */; };
@@ -70,7 +70,6 @@
 		62337D7426174FDD00AF8C1D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		62337D8326176B0400AF8C1D /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		62337D8826176B1900AF8C1D /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
-		6293B6AB2619F98500CFAD03 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		6293B6DF261B150200CFAD03 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
 		6293B6F7261B17C800CFAD03 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
 		6293B6FC261B187500CFAD03 /* CommonFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonFunctions.swift; sourceTree = "<group>"; };
@@ -79,6 +78,7 @@
 		6293B720261B4DAF00CFAD03 /* ButtonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonsViewController.swift; sourceTree = "<group>"; };
 		6293B725261B4E9900CFAD03 /* SpeakViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakViewController.swift; sourceTree = "<group>"; };
 		6293B72A261B56A000CFAD03 /* ButtonCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonCollectionViewCell.swift; sourceTree = "<group>"; };
+		6293B778261F2E3400CFAD03 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		86065D23D92553DC6CD8FF08 /* Pods-ChildLearning-ChildLearningUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChildLearning-ChildLearningUITests.debug.xcconfig"; path = "Target Support Files/Pods-ChildLearning-ChildLearningUITests/Pods-ChildLearning-ChildLearningUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		91E0A64EB8F8A9891BF5BDA9 /* Pods_ChildLearning.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChildLearning.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B62FC7FB648EFA59885CECBC /* Pods_ChildLearningTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ChildLearningTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,7 +139,6 @@
 		62337D4426174FD900AF8C1D = {
 			isa = PBXGroup;
 			children = (
-				6293B6AB2619F98500CFAD03 /* GoogleService-Info.plist */,
 				62337D4F26174FD900AF8C1D /* ChildLearning */,
 				62337D6626174FDD00AF8C1D /* ChildLearningTests */,
 				62337D7126174FDD00AF8C1D /* ChildLearningUITests */,
@@ -162,6 +161,7 @@
 		62337D4F26174FD900AF8C1D /* ChildLearning */ = {
 			isa = PBXGroup;
 			children = (
+				6293B778261F2E3400CFAD03 /* GoogleService-Info.plist */,
 				62337D5026174FD900AF8C1D /* AppDelegate.swift */,
 				62337D5226174FD900AF8C1D /* SceneDelegate.swift */,
 				62337D5426174FD900AF8C1D /* ViewController.swift */,
@@ -310,8 +310,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6293B6AC2619F98500CFAD03 /* GoogleService-Info.plist in Resources */,
 				62337D5D26174FDC00AF8C1D /* LaunchScreen.storyboard in Resources */,
+				6293B779261F2E3400CFAD03 /* GoogleService-Info.plist in Resources */,
 				62337D5A26174FDC00AF8C1D /* Assets.xcassets in Resources */,
 				62337D5826174FD900AF8C1D /* Main.storyboard in Resources */,
 			);
