@@ -20,6 +20,11 @@ class HomeViewController: UIViewController {
         }
         // Do any additional setup after loading the view.
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        self.navigationController?.navigationBar.isHidden = true
+    }
 
     @IBAction func wordClicked(_ sender: Any) {
         let vc = self.storyboard?.instantiateViewController(identifier: "ButtonsViewController") as! ButtonsViewController

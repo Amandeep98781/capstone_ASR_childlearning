@@ -24,7 +24,6 @@ class LoginViewController: UIViewController {
         self.navigationController?.navigationBar.isTranslucent = true
         self.ref = Database.database().reference()
         fetchAllUsers()
-        fetchAlphabets()
         // Do any additional setup after loading the view.
     }
     
@@ -43,19 +42,7 @@ class LoginViewController: UIViewController {
         })
     }
     
-    func fetchAlphabets(){
-        let db = Firestore.firestore()
-        db.collection(Constant.FirebaseData.Alphabets).getDocuments { (query, error) in
-            if let err = error {
-                   print("Error getting documents: \(err)")
-               } else {
-                   for document in query!.documents {
-                       print("\(document.documentID) => \(document.data())")
-                   }
-               }
-        }
-       
-    }
+  
     
     @IBAction func facebookLoginClicked(_ sender: Any) {
     }
@@ -80,7 +67,7 @@ class LoginViewController: UIViewController {
         if let singleUser = users.enumerated().first(where: {$0.element.email == email}) {
 
             let user = singleUser.element
-            if user.password == password{
+            if user.password != password{
                 Alert.addAlertController(strTittle: "Error!", strMessage: "Incorrect Password", viewC: self)
             }
             else{
