@@ -325,60 +325,62 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="1zi-wl-EeX"/>
                                 </constraints>
-                                <color key="textColor" name="AccentColor"/>
+                                <color key="textColor" red="0.4549019608" green="0.79215686269999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
-                                        <color key="value" name="AccentColor"/>
+                                        <color key="value" red="0.4549019608" green="0.79215686269999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ePj-az-kEQ">
                                 <rect key="frame" x="30" y="377.5" width="354" height="35"/>
+                                <color key="tintColor" red="0.4549019608" green="0.79215686269999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="9Dv-G4-aFD"/>
                                 </constraints>
-                                <color key="textColor" name="AccentColor"/>
+                                <color key="textColor" red="1" green="0.79215686269999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
-                                        <color key="value" name="AccentColor"/>
+                                        <color key="value" red="0.4549019608" green="0.79215686269999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s7g-uC-ewY">
                                 <rect key="frame" x="30" y="477.5" width="354" height="1"/>
-                                <color key="backgroundColor" name="AccentColor"/>
+                                <color key="backgroundColor" red="1" green="0.79215686269999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="Gg7-xg-abX"/>
                                 </constraints>
                             </view>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="4zk-J7-6lP">
                                 <rect key="frame" x="30" y="442.5" width="354" height="35"/>
+                                <color key="tintColor" red="0.4549019608" green="0.79215686269999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="35" id="vZF-vj-MSr"/>
                                 </constraints>
-                                <color key="textColor" name="AccentColor"/>
+                                <color key="textColor" red="0.4549019608" green="0.79215686269999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="color" keyPath="placeholderLabel.textColor">
-                                        <color key="value" name="AccentColor"/>
+                                        <color key="value" red="0.4549019608" green="0.79215686269999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WY5-Hc-ZuR">
                                 <rect key="frame" x="30" y="412.5" width="354" height="1"/>
-                                <color key="backgroundColor" name="AccentColor"/>
+                                <color key="backgroundColor" red="1" green="0.79215686269999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="yvb-Ha-5pn"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4bh-Kd-VMh">
                                 <rect key="frame" x="30" y="346.5" width="354" height="1"/>
-                                <color key="backgroundColor" name="AccentColor"/>
+                                <color key="backgroundColor" red="1" green="0.79215686269999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="1" id="HkE-tM-RIZ"/>
                                 </constraints>
@@ -588,24 +590,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WORDS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NLA-tY-ivg">
-                                <rect key="frame" x="60" y="108" width="294" height="31.5"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="23"/>
-                                <color key="textColor" name="AccentColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="625-kA-0L3">
-                                <rect key="frame" x="15" y="159.5" width="384" height="716.5"/>
+                                <rect key="frame" x="15" y="98" width="384" height="778"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="j08-gr-glm">
                                     <size key="itemSize" width="181" height="138"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="40" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ButtonCollectionViewCell" id="9Ku-G7-VIQ" customClass="ButtonCollectionViewCell" customModule="ChildLearning" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="0.0" width="181" height="138"/>
+                                        <rect key="frame" x="0.0" y="40" width="181" height="138"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="jbI-Zi-YRq">
                                             <rect key="frame" x="0.0" y="0.0" width="181" height="138"/>
@@ -625,7 +621,7 @@
                                                 <constraint firstAttribute="bottom" secondItem="cYE-VY-anp" secondAttribute="bottom" constant="5" id="zPQ-dk-ScR"/>
                                             </constraints>
                                         </collectionViewCellContentView>
-                                        <color key="backgroundColor" name="AccentColor"/>
+                                        <color key="backgroundColor" red="1" green="0.56470588239999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <size key="customSize" width="181" height="138"/>
                                         <connections>
                                             <outlet property="lblName" destination="cYE-VY-anp" id="Hv1-cy-5zR"/>
@@ -643,25 +639,26 @@
                         <constraints>
                             <constraint firstItem="625-kA-0L3" firstAttribute="leading" secondItem="Fsm-zL-GVs" secondAttribute="leading" constant="15" id="3U9-up-mqy"/>
                             <constraint firstAttribute="bottom" secondItem="625-kA-0L3" secondAttribute="bottom" constant="20" id="PbJ-N1-4x9"/>
-                            <constraint firstItem="625-kA-0L3" firstAttribute="top" secondItem="NLA-tY-ivg" secondAttribute="bottom" constant="20" id="Yi9-a7-JuP"/>
-                            <constraint firstItem="NLA-tY-ivg" firstAttribute="leading" secondItem="Fsm-zL-GVs" secondAttribute="leading" constant="60" id="Zao-YX-0YA"/>
                             <constraint firstItem="Fsm-zL-GVs" firstAttribute="trailing" secondItem="625-kA-0L3" secondAttribute="trailing" constant="15" id="bZT-BB-XDp"/>
-                            <constraint firstItem="Fsm-zL-GVs" firstAttribute="trailing" secondItem="NLA-tY-ivg" secondAttribute="trailing" constant="60" id="eFH-3I-ALd"/>
-                            <constraint firstItem="NLA-tY-ivg" firstAttribute="top" secondItem="Fsm-zL-GVs" secondAttribute="top" constant="20" id="r89-fS-fxE"/>
+                            <constraint firstItem="625-kA-0L3" firstAttribute="top" secondItem="Fsm-zL-GVs" secondAttribute="top" constant="10" id="ole-A8-JS7"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="tii-sL-Kv3">
-                        <barButtonItem key="leftBarButtonItem" image="back" style="done" id="Qtp-Wj-Sf1">
-                            <color key="tintColor" name="AccentColor"/>
-                            <connections>
-                                <action selector="backClicked:" destination="5l3-bz-TnF" id="uG3-hb-zxM"/>
-                            </connections>
-                        </barButtonItem>
+                        <leftBarButtonItems>
+                            <barButtonItem image="back" style="done" id="Qtp-Wj-Sf1">
+                                <color key="tintColor" red="1" green="0.56470588239999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="backClicked:" destination="5l3-bz-TnF" id="uG3-hb-zxM"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Words" style="done" id="yZA-GB-xUu">
+                                <color key="tintColor" red="1" green="0.56470588239999997" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </barButtonItem>
+                        </leftBarButtonItems>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                     <connections>
                         <outlet property="collectionVWords" destination="625-kA-0L3" id="oW6-WJ-WGJ"/>
-                        <outlet property="lblTitle" destination="NLA-tY-ivg" id="kv1-XH-6mJ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h5Q-I4-2Ta" sceneMemberID="firstResponder"/>
@@ -684,7 +681,7 @@
                             </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="5mt-gv-HUt"/>
-                        <color key="backgroundColor" name="AccentColor"/>
+                        <color key="backgroundColor" red="0.4549019608" green="0.79215686269999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="5mt-gv-HUt" firstAttribute="bottom" secondItem="MRH-Gi-35m" secondAttribute="bottom" constant="5" id="04H-eD-Yhm"/>
                             <constraint firstItem="MRH-Gi-35m" firstAttribute="top" secondItem="5mt-gv-HUt" secondAttribute="top" constant="5" id="XTN-YM-8L4"/>
@@ -693,8 +690,8 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="IKR-rN-KyU">
-                        <barButtonItem key="leftBarButtonItem" title="Home" style="done" id="dB2-vg-8ra">
-                            <color key="tintColor" name="AccentColor"/>
+                        <barButtonItem key="leftBarButtonItem" title="Words" style="done" id="dB2-vg-8ra">
+                            <color key="tintColor" red="1" green="0.79215686269999996" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </barButtonItem>
                     </navigationItem>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
