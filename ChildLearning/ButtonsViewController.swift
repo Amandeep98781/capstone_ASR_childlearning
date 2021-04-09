@@ -13,9 +13,16 @@ class ButtonsViewController: UIViewController {
     @IBOutlet weak var lblTitle: UILabel!
     
     var arr = [String]()
+    var isNumbers = Bool()
+    var isAlphabets = Bool()
     override func viewDidLoad() {
         super.viewDidLoad()
-        fetchAlphabets()
+        if isNumbers{
+            fetchNumbers()
+        }
+        else if isAlphabets{
+            fetchAlphabets()
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -33,18 +40,44 @@ class ButtonsViewController: UIViewController {
             if let err = error {
                    print("Error getting documents: \(err)")
                } else {
+                var list = [String]()
                    for document in query!.documents {
                        print("\(document.documentID) => \(document.data())")
                     if let doc = document.data() as? [String: Any]{
                         if let value =  doc["name"] as? String{
                             print("value ------ \(value)")
-                            self.arr.append(value)
-                            self.arr = self.arr.sorted { $0.localizedCaseInsensitiveCompare($1) == ComparisonResult.orderedAscending }
-                            self.collectionVWords.reloadData()
+                            list.append(value)
                         }
                        
                     }
                    }
+                self.arr = list.sorted { $0.localizedCaseInsensitiveCompare($1) == ComparisonResult.orderedAscending }
+                    self.collectionVWords.reloadData()
+               }
+        }
+       
+    }
+    
+    func fetchNumbers(){
+        let db = Firestore.firestore()
+        print(db.collection(Constant.FirebaseData.Numbers))
+        db.collection(Constant.FirebaseData.Numbers).getDocuments { (query, error) in
+            if let err = error {
+                   print("Error getting documents: \(err)")
+               } else {
+                var list = [String]()
+                   for document in query!.documents {
+                       print("\(document.documentID) => \(document.data())")
+                    if let doc = document.data() as? [String: Any]{
+                        if let value =  doc["name"] as? String{
+                            print("value ------ \(value)")
+                            list.append(value)
+                        }
+                       
+                    }
+                   }
+                self.arr = list.sorted {$0.localizedStandardCompare($1) == .orderedAscending} 
+                self.collectionVWords.reloadData()
                }
         }
        
@@ -59,9 +92,14 @@ extension ButtonsViewController: UICollectionViewDelegate, UICollectionViewDataS
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ButtonCollectionViewCell", for: indexPath) as! ButtonCollectionViewCell
-        cell.lblName.text = arr[indexPath.row]
+        cell.lblName.text = arr[indexPath.row].capitalized
         cell.layer.cornerRadius = 5.0
         return cell
+    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let vc = self.storyboard?.instantiateViewController(identifier: "SpeakViewController") as! SpeakViewController
+        vc.strWord = arr[indexPath.row]
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
 

@@ -33,11 +33,13 @@ class HomeViewController: UIViewController {
     
     @IBAction func alphabetClicked(_ sender: Any) {
         let vc = self.storyboard?.instantiateViewController(identifier: "ButtonsViewController") as! ButtonsViewController
+        vc.isAlphabets = true
         self.navigationController?.pushViewController(vc, animated: true)
     }
     
     @IBAction func numberClicked(_ sender: Any) {
         let vc = self.storyboard?.instantiateViewController(identifier: "ButtonsViewController") as! ButtonsViewController
+        vc.isNumbers = true
         self.navigationController?.pushViewController(vc, animated: true)
     }
     

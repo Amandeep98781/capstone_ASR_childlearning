@@ -7,16 +7,144 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "2A1F01B3-1344-4137-8125-872A6F4BE4F4"
+            uuid = "DFE08FA0-3DCF-40F4-A79F-0EC77BFD126D"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "ChildLearning/LoginViewController.swift"
+            filePath = "ChildLearning/HomeViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "38"
-            endingLineNumber = "38"
-            landmarkName = "fetchAllUsers()"
+            startingLineNumber = "41"
+            endingLineNumber = "41"
+            landmarkName = "numberClicked(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "DFE08FA0-3DCF-40F4-A79F-0EC77BFD126D - e09dce4467c70e59"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ChildLearning.HomeViewController.numberClicked(Any) -&gt; ()"
+                  moduleName = "ChildLearning"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rakinder/Projects/capstone_ASR_childlearning/ChildLearning/HomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "106">
+               </Location>
+               <Location
+                  uuid = "DFE08FA0-3DCF-40F4-A79F-0EC77BFD126D - e09dce4467c70e59"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ChildLearning.HomeViewController.numberClicked(Any) -&gt; ()"
+                  moduleName = "ChildLearning"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rakinder/Projects/capstone_ASR_childlearning/ChildLearning/HomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "41"
+                  endingLineNumber = "41"
+                  offsetFromSymbolStart = "881">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "16B0D1D4-F17B-44CD-BB22-DD519CD6A7F8"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ChildLearning/HomeViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "35"
+            endingLineNumber = "35"
+            landmarkName = "alphabetClicked(_:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "16B0D1D4-F17B-44CD-BB22-DD519CD6A7F8 - f52427c9c4c33459"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ChildLearning.HomeViewController.alphabetClicked(Any) -&gt; ()"
+                  moduleName = "ChildLearning"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rakinder/Projects/capstone_ASR_childlearning/ChildLearning/HomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "106">
+               </Location>
+               <Location
+                  uuid = "16B0D1D4-F17B-44CD-BB22-DD519CD6A7F8 - f52427c9c4c33459"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "ChildLearning.HomeViewController.alphabetClicked(Any) -&gt; ()"
+                  moduleName = "ChildLearning"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/rakinder/Projects/capstone_ASR_childlearning/ChildLearning/HomeViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "35"
+                  endingLineNumber = "35"
+                  offsetFromSymbolStart = "881">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D68B12EA-C13E-4204-9159-BC8176E4BEC0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ChildLearning/ButtonsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
+            landmarkName = "fetchNumbers()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "C3FBFBF4-0D03-49FC-902A-53EB7EA5CF13"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ChildLearning/ButtonsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "39"
+            endingLineNumber = "39"
+            landmarkName = "fetchAlphabets()"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "5F224B4F-FA54-4A5B-8378-4A0CC95AA7C0"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "ChildLearning/ButtonsViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "37"
+            endingLineNumber = "37"
+            landmarkName = "fetchAlphabets()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
